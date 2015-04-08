@@ -5,6 +5,13 @@
 % You may use and redistribute this as a template, but please leave this
 % comment.
 \documentclass[11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[explicit]{titlesec}
+\usepackage{pgf}
+\usepackage{pgfpages}
+
 \topmargin=0.0in
 \textwidth=6.5in
 \oddsidemargin=0.0in
@@ -14,8 +21,35 @@
 \textheight=9.5in
 \pagenumbering{gobble}
 \setlength{\parindent}{0pt}
+
+\pgfpagesdeclarelayout{boxed}
+{
+	\edef\pgfpageoptionborder{0pt}
+}
+{
+	\pgfpagesphysicalpageoptions
+	{%
+		logical pages=1,%
+	}
+	\pgfpageslogicalpageoptions{1}
+	{
+		border code=\pgfsetlinewidth{2pt}\pgfstroke,%
+		border shrink=\pgfpageoptionborder,%
+		resized width=.95\pgfphysicalwidth,%
+		resized height=.95\pgfphysicalheight,%
+		center=\pgfpoint{.5\pgfphysicalwidth}{.5\pgfphysicalheight}%
+	}%
+}
+
+\pgfpagesuselayout{boxed}
+
+\titleformat{\section}
+	{\normalfont\large\sffamily\color{white}}%
+	{}{0em}%
+	{{\color{black}\titlerule[3pt]}\vskip-.38\baselineskip\colorbox{OliveGreen!100}{\parbox[t]{\dimexpr\textwidth-2\fboxsep\relax}{\raggedright\strut#1\strut}}}[\vskip-.2\baselineskip{\color{black}\titlerule[3pt]}]
+
 \begin{document}
-\centerline{{\LARGE \bf Tristan Patch}}
+\section*{\centerline{\LARGE \bf Tristan Patch}}
 \bigskip
 \centerline{Permanent Address: 5563 Livingston Ave, Eugene, OR 97402}
 \centerline{School Address: 858 West Complex, Oregon State University, Corvallis, OR 97331}
@@ -30,14 +64,28 @@ https://lyonesgamer.com}
 \bigskip
 \hrulefill
 \bigskip
-{\Large \bf Employment:}
+{\Large \bf Experience:}
 \begin{description}
 \item[Concentric Sky, Inc]
 \hfill 06/2011 - present
 
-Developed web applications using Spring REST servers and AngularJS/TypeScript/Less frontends
+Develop web applications using Spring REST servers and AngularJS/TypeScript/Less frontends
 
-Participated in agile development using Scrum methodology
+Participate in agile development using Scrum methodology
+
+
+\item[NextStep Recycling]
+\hfill 2012-2014
+
+Build, test, and deploy refurbished computers and other household electronics
+
+
+\item[High School Robotics]
+\hfill 2012
+
+Co-founded robotics club at Willamette High School.
+
+Club went on to win 3rd place in state competition.
 \end{description}
 \smallskip
 \hrulefill
@@ -70,39 +118,6 @@ See bitbucket.org/LyonesGamer/JPropertyGrid
 \smallskip
 \hrulefill
 \bigskip
-{\Large \bf Extracurriculars:}
-\begin{description}
-\item[Judo]
-\hfill 2008 - present
-
-Study and develop skills, both physical and mental, in the Japanese martial art of Judo
-
-Currently at yonkyu, or orange belt, level
-
-\item[Marching Band]
-\hfill 2010 - present
-
-Performed in drumline in marching band at both high school and college level
-
-\item[NextStep Recycling]
-\hfill 2012-2014
-
-Volunteer work
-
-Built, tested, and deployed refurbished computers and other household electronics
-
-
-\item[High School Robotics]
-\hfill 2012
-
-Co-founded robotics club at Willamette High School.
-
-Club went on to win 3rd place in state competition.
-\end{description}
-\smallskip
-\clearpage
-\hrulefill
-\bigskip
 {\Large \bf Skills:}
 \begin{description}
 \item[Programming Languages]
@@ -124,12 +139,5 @@ Apache HTTPD, Apache Tomcat, MongoDB, MySQL, Git
 \hfill
 
 German
-\end{description}
-\smallskip
-\hrulefill
-\bigskip
-{\Large \bf References:}
-\begin{description}
-\item[Available upon request]
 \end{description}
 \end{document}
