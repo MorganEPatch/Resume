@@ -11,37 +11,18 @@
 \usepackage[explicit]{titlesec}
 \usepackage{pgf}
 \usepackage{pgfpages}
+\usepackage{setspace}
 
-\topmargin=0.0in
-\textwidth=6.5in
-\oddsidemargin=0.0in
-\evensidemargin=0in
+\topmargin=-0.75in
+\textwidth=7.5in
+\oddsidemargin=-0.5in
+\evensidemargin=0.0in
 \headheight=0pt
 \headsep=0pt
-\textheight=9.5in
+\textheight=10.5in
 \pagenumbering{gobble}
 \setlength{\parindent}{0pt}
-
-\pgfpagesdeclarelayout{boxed}
-{
-	\edef\pgfpageoptionborder{0pt}
-}
-{
-	\pgfpagesphysicalpageoptions
-	{%
-		logical pages=1,%
-	}
-	\pgfpageslogicalpageoptions{1}
-	{
-		border code=\pgfsetlinewidth{2pt}\pgfstroke,%
-		border shrink=\pgfpageoptionborder,%
-		resized width=.95\pgfphysicalwidth,%
-		resized height=.95\pgfphysicalheight,%
-		center=\pgfpoint{.5\pgfphysicalwidth}{.5\pgfphysicalheight}%
-	}%
-}
-
-\pgfpagesuselayout{boxed}
+\singlespacing
 
 \titleformat{\section}
 	{\normalfont\large\sffamily\color{white}}%
@@ -49,29 +30,24 @@
 	{{\color{black}\titlerule[3pt]}\vskip-.38\baselineskip\colorbox{OliveGreen!100}{\parbox[t]{\dimexpr\textwidth-2\fboxsep\relax}{\raggedright\strut#1\strut}}}[\vskip-.2\baselineskip{\color{black}\titlerule[3pt]}]
 
 \begin{document}
-\section*{\centerline{\LARGE \bf Tristan Patch}}
+\section*{\centerline{\LARGE \textbf{Tristan Patch}}}
 \bigskip
-\centerline{Permanent Address: 5563 Livingston Ave, Eugene, OR 97402}
-\centerline{School Address: 858 West Complex, Oregon State University, Corvallis, OR 97331}
+\centerline{Address: 858 West Complex, Oregon State University, Corvallis, OR 97331}
+\centerline{email: patcht@onid.orst.edu $\bullet$ phone: (541)-223-8190}
+\centerline{https://lyonesgamer.com $\bullet$ \emph{or email me for other contact info}}
 \bigskip
-\centerline{email: patcht@onid.orst.edu
-$\bullet$
-phone: (541)-223-8190}
-\centerline{projects at bitbucket.org/LyonesGamer
-$\bullet$
-https://lyonesgamer.com}
-\centerline{\emph{or email me for other contact info}}
-\bigskip
+{\Large \textbf{Experience:}}
 \hrulefill
 \bigskip
-{\Large \bf Experience:}
 \begin{description}
 \item[Concentric Sky, Inc]
 \hfill 06/2011 - present
 
-Develop web applications using Spring REST servers and AngularJS/TypeScript/Less frontends
+Develop web applications using Spring REST servers and AngularJS/TypeScript/Less front-ends
 
 Participate in agile development using Scrum methodology
+
+Work in a team setting to develop software collaboratively
 
 
 \item[NextStep Recycling]
@@ -79,65 +55,72 @@ Participate in agile development using Scrum methodology
 
 Build, test, and deploy refurbished computers and other household electronics
 
-
-\item[High School Robotics]
-\hfill 2012
-
-Co-founded robotics club at Willamette High School.
-
-Club went on to win 3rd place in state competition.
+Work with others in an assembly-line style to complete a large task
 \end{description}
-\smallskip
+\bigskip
+{\Large \textbf{Education:}}
 \hrulefill
 \bigskip
-{\Large \bf Education:}
 \begin{description}
 \item[Undergraduate: Oregon State University]
-\hfill 09/2014 - present
+\hfill 09/2014 - 06/2018
 
-Sophomore majoring in Computer Science, minors in German, Physics
-
-University Honors College
+Honors Bachelor of Science in Computer Science, minors in German, Physics
 
 Cumulative GPA: 3.11
-
-Anticipated graduation: June 2018
 \end{description}
-\smallskip
+\bigskip
+{\Large \textbf{Projects:}}
 \hrulefill
 \bigskip
-{\Large \bf Projects:}
 \begin{description}
 \item[JPropertyGrid]
 \hfill 10/2014 - present
 
 A Java Swing control to allow visual editing of key-value pair properties.
 
-See bitbucket.org/LyonesGamer/JPropertyGrid
+\item[All projects available at bitbucket.org/LyonesGamer]
+
+
+\item[High School Robotics]
+\hfill 2012
+
+Co-found robotics club at Willamette High School.
+
+Lead team in designing and building a robot for FIRST competition.
+
+Club went on to win 3rd place in state competition.
+\hfill
 \end{description}
-\smallskip
+\bigskip
+%\clearpage
+{\Large \textbf{Skills:}}
 \hrulefill
 \bigskip
-{\Large \bf Skills:}
 \begin{description}
+\item[Languages]
+\hfill
+
+German
+
 \item[Programming Languages]
 \hfill`
 
-Java, C/C++, Python, PHP, JavaScript, TypeScript, Lua, HTML, CSS, Less
+Java, C/C++, Python, PHP, JavaScript, TypeScript, Lua, HTML, CSS, Less,  Boo, LaTeX
 
 \item[APIs and Libraries]
 \hfill
 
-Swing, Spring, Dropwizard, AngularJS, RequireJS, Grunt
+Swing, Spring, Dropwizard, AngularJS, RequireJS, Grunt, wxWidgets, Node
 
 \item[Software]
 \hfill
 
-Apache HTTPD, Apache Tomcat, MongoDB, MySQL, Git
+Apache HTTPD, Apache Tomcat, MongoDB, MySQL, Git, VirtualBox, IRC
 
-\item[Other]
+\item[Operating Systems]
 \hfill
 
-German
+Windows, Mac OS X, Ubuntu, Debian, Linux Mint
 \end{description}
 \end{document}
