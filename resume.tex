@@ -13,14 +13,9 @@
 \usepackage{pgfpages}
 \usepackage{setspace}
 \usepackage{hyperref}
+\usepackage{geometry}
 
-\topmargin=-0.75in
-\textwidth=7.5in
-\oddsidemargin=-0.5in
-\evensidemargin=0.0in
-\headheight=0pt
-\headsep=0pt
-\textheight=10.5in
+\geometry{letterpaper, left=0.5in, right=0.5in, top=0.5in, bottom=0.5in}
 \pagenumbering{gobble}
 \setlength{\parindent}{0pt}
 \singlespacing
@@ -31,67 +26,13 @@
 	{{\color{black}\titlerule[3pt]}\vskip-.38\baselineskip\colorbox{Plum!100}{\parbox[t]{\dimexpr\textwidth-2\fboxsep\relax}{\raggedright\strut#1\strut}}}[\vskip-.2\baselineskip{\color{black}\titlerule[3pt]}]
 
 \begin{document}
-\section*{\centerline{\huge \textbf{Morgan E. Patch}}}
-\bigskip
+\section*{\centerline{\huge \textbf{Morgan Patch}}}
+\smallskip
 \centerline{12600 Jen Lane, Austin, TX 78750}
 \centerline{me@morganepatch.dev $\bullet$ (541) 223-8190}
-\bigskip
-{\huge \textbf{Experience:}}
-\hrulefill
 \smallskip
-\begin{description}
-
-\item[Software Developer - Ping Identity Corp.]
-\hfill 07/2018
-\begin{itemize}
-\item Designed and implemented a new REST API to extend existing functionality
-
-\item Helped rewrite existing project to meet new requirements for re-release
-
-\item Contributed to design and direction of new versions of legacy software
-
-\item Worked to ensure software meets both performance and security requirements
-
-\item Contributed to open-source software used in enterprise software
-\end{itemize}
-
-\item[Summer Intern - CoreOS, Inc.]
-\hfill 06/2017 - 09/2017
-\begin{itemize}
-\item Spec, design, and create a complete application to increase productivity
-\item Combine multiple enterprise REST APIs from other sources
-\end{itemize}
-
-\item[Student Developer - Open Source Lab @ OSU]
-\hfill 05/2015 - 06/2017
-\begin{itemize}
-\item Work to develop, test, and advance open source software using both Django and Node.js
-\item Participate in collaborative development, both with coworkers and the FOSS community at large
-\item Lead development of a flagship project and co-operate with clients to develop new projects
-\end{itemize}
-
-\item[Junior Developer - Concentric Sky, Inc]
-\hfill 06/2011 - 08/2014
-\begin{itemize}
-\item Develop web applications using Spring REST servers and AngularJS/TypeScript/Less front-ends
-\item Participate in agile development using Scrum methodology
-\item Work in a team setting to develop software collaboratively
-\end{itemize}
-\end{description}
-\smallskip
-{\huge \textbf{Education:}}
-\hrulefill
-\smallskip
-\begin{description}
-\item[Undergraduate: Oregon State University]
-\hfill 09/2014
-
-Bachelor of Science in Computer Science
-\end{description}
-\bigskip
 {\huge \textbf{Skills:}}
 \hrulefill
-\smallskip
 \begin{description}
 \item[Languages]
 \hfill
@@ -108,5 +49,53 @@ Bachelor of Science in Computer Science
 \item 2-4 years: Django, HAProxy, Chef, Ansible
 \item 1 year: MongoDB, ReactJS, Subversion
 \end{itemize}
+\end{description}
+\smallskip
+{\huge \textbf{Experience:}}
+\hrulefill
+\begin{description}
+
+\item[Software Developer - Ping Identity Corp.]
+\hfill 07/2018
+\begin{itemize}
+\item Designed and implemented a new REST API to allow access to the existing LDAP API via HTTP requests, making the product much more accessible
+
+\item Collaborated with team to create a design for an existing project which was being changed to meet new requirements, then worked to deliver this new version in under a year
+
+\item Integrated new design work and requirements with existing legacy code, allowing fast turn around on the existing project without more rewriting than was necessary
+
+\item Ensured the stability of the project through a consistently high quality of unit tests as well as working closely with the QA team
+
+\item Took ownership of several components of the project in all phases of the lifecycle, including ongoing maintenance
+
+\item Oversaw profiling of the project and collaboration with QA to complete performance testing and improve nonperformant cases, dropping one customer's use case from over 6 seconds to under 1
+
+\item Took ownership of a corporate fork of an open-source project, maintaining the codebase and performing several releases independent of the upstream release schedule, as well as contributing fixes back to the upstream
+\end{itemize}
+
+\item[Student Developer - Open Source Lab @ OSU]
+\hfill 05/2015 - 06/2017
+\begin{itemize}
+\item Worked to develop, test, and advance open source software using both Django and Node
+\item Participated in collaborative development, both with coworkers and the FOSS community at large
+\item Lead development of a flagship project and co-operated with clients to develop new projects
+\end{itemize}
+
+\item[Junior Developer - Concentric Sky, Inc]
+\hfill 06/2011 - 08/2014
+\begin{itemize}
+\item Developed web applications using Spring REST servers and AngularJS/TypeScript/Less front-ends
+\item Participated in agile development using Scrum methodology
+\item Worked in a team setting to develop software collaboratively
+\end{itemize}
+\end{description}
+\smallskip
+{\huge \textbf{Education:}}
+\hrulefill
+\begin{description}
+\item[Undergraduate: Oregon State University]
+\hfill 09/2014
+
+Bachelor of Science in Computer Science
 \end{description}
 \end{document}
