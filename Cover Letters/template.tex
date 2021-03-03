@@ -1,0 +1,88 @@
+% Morgan Patch -- Cover Letter Template
+% Copyright (C) 2021, Morgan Patch
+\documentclass[11pt, letterpaper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[explicit]{titlesec}
+\usepackage{pgf}
+\usepackage{pgfpages}
+\usepackage{setspace}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{ragged2e}
+\usepackage{xcolor}
+\usepackage[default,opentype]{sourcesanspro}
+\usepackage{fontawesome5}
+
+\geometry{letterpaper}
+\pagenumbering{gobble}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{1em}
+\singlespacing
+\fancyhfoffset{0em}
+\fancyhf{}
+\pagestyle{fancy}
+
+
+\def\firstname{Morgan}
+\def\lastname{Patch}
+\def\position{Software Engineer}
+\def\address{12600 Jen Lane, Austin, TX 78750}
+\def\mobile{(541)-223-8190}
+\def\email{me@morganepatch.dev}
+\def\github{MorganEPatch}
+\def\linkedin{MorganEPatch}
+
+\def\recipient{Some Company}
+\def\recipientaddress{1234 Some St., City, ST 12345}
+
+\def\letterdate{\today}
+
+\definecolor{lightgray}{HTML}{999999}
+\definecolor{gray}{HTML}{5D5D5D}
+\definecolor{darkgray}{HTML}{333333}
+\definecolor{purple}{HTML}{660055}
+
+\newcommand*{\footerstyle}[1]{{\fontsize{8pt}{1em}\scshape\color{lightgray} #1}}
+
+
+\begin{document}
+\begin{minipage}{0.5\textwidth}
+    \raggedright
+    {\fontsize{12pt}{1em}\sourcesansprolight\slshape\color{gray} \letterdate}\\
+    \smallskip
+    {\fontsize{14pt}{1em}\bfseries\color{darkgray} \recipient}\\
+    {\fontsize{10pt}{1em}\scshape\color{gray} \recipientaddress}
+\end{minipage}
+\begin{minipage}[c]{0.5\textwidth}
+    \raggedleft
+    {\fontsize{32pt}{1em}\sourcesansprolight\color{gray} \firstname}\space
+    {\fontsize{32pt}{1em}\bfseries\color{darkgray} \lastname}\\
+    {\fontsize{12pt}{1em}\scshape\color{purple} \position}\\
+    {\fontsize{8pt}{1em}\itshape\color{lightgray} \address}\\
+    {\fontsize{6pt}{1em}\color{darkgray} \faIcon{mobile} \mobile \quad\textbar\quad \href{mailto:\email}{\faIcon{envelope} \email} \\ \href{https://github.com/\github}{\faIcon{github} \github} \quad\textbar\quad \href{https://linkedin.com/in/\linkedin}{\faIcon{linkedin} \linkedin}}
+\end{minipage}
+
+\onehalfspacing
+\bigskip
+
+Mr./Mrs./Ms. Lastname,
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed nisi vel felis eleifend maximus. Nam augue est, commodo non enim a, venenatis lobortis dolor. In facilisis risus at nunc mollis mattis. Pellentesque turpis massa, bibendum id fermentum a, interdum sit amet orci. Donec congue dolor non mauris sodales lacinia. Proin quis condimentum ex. Ut ac tincidunt nibh.
+
+Fusce quam odio, dignissim vitae consectetur ac, consectetur at dui. Integer rhoncus feugiat leo vitae scelerisque. Vestibulum condimentum purus est. Pellentesque accumsan purus eu turpis consequat posuere et id lectus. Ut vel enim in nunc egestas eleifend. Aenean viverra, ex vitae varius dapibus, mauris urna cursus velit, eu consectetur ante turpis et tellus. Nulla vitae mi velit. Donec vestibulum tellus et viverra aliquam. Pellentesque ac blandit diam, vitae semper felis. Proin vel libero eu augue hendrerit tempor. Nullam interdum maximus velit ut facilisis. Fusce congue nisi sed purus congue, id bibendum turpis tincidunt. Sed venenatis tristique lacinia. Duis purus nibh, dignissim nec eleifend et, molestie sit amet dui. Praesent ornare tortor id nunc eleifend, at accumsan quam molestie.
+
+Morbi a finibus ligula, nec commodo tortor. Suspendisse at consequat erat, ut maximus odio. Cras sit amet mauris semper, sodales dolor id, sollicitudin nisi. Etiam ut leo at mauris vestibulum varius in sed lorem. Sed pellentesque quam quam, vitae faucibus dui aliquam eget. Mauris eleifend sodales sem, sed consequat ligula cursus ut. Donec elementum nec nisl sit amet tristique. Suspendisse venenatis est eu est posuere, vitae tempus felis volutpat. Donec pellentesque tortor non dui lacinia, sed vehicula erat placerat.
+
+Sincerely,
+
+\textbf{\firstname\ \lastname}
+
+
+\fancyfoot{}
+\fancyfoot[L]{\footerstyle{\letterdate}}
+\fancyfoot[C]{\footerstyle{\firstname\ \lastname}}
+\fancyfoot[R]{\footerstyle{\recipient\ Cover Letter}}
+\end{document}
