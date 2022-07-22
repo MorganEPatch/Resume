@@ -4,7 +4,7 @@
 % https://github.com/edunham/resume/blob/master/resume.tex
 % You may use and redistribute this as a template, but please leave this
 % comment.
-\documentclass[11pt]{article}
+\documentclass[10pt]{article}
 
 \usepackage[utf8]{inputenc}
 \usepackage[usenames,dvipsnames]{xcolor}
@@ -20,6 +20,8 @@
 \setlength{\parindent}{0pt}
 \singlespacing
 
+\input{contact.tex}
+
 \titleformat{\section}
 	{\normalfont\large\sffamily\color{white}}%
 	{}{0em}%
@@ -28,23 +30,32 @@
 \begin{document}
 \section*{\centerline{\huge \textbf{Morgan Patch}}}
 \smallskip
-\centerline{12600 Jen Lane, Austin, TX 78750}
-\centerline{me@morganepatch.dev $\bullet$ (541) 223-8190}
+\centerline{\Address}
+\centerline{\Email \quad $\bullet$ \quad \Phone}
 \smallskip
 {\huge \textbf{Skills:}}
 \hrulefill
 \begin{itemize}
-\item Proficient: Java, JavaScript, Python, Git, REST, Node, SQL
-\item Comfortable: C/C++, Lua, LaTeX, C\#, Django, Ansible, MongoDB, Agile, Docker
-\item Familiar: Rust, Go, AngularJS, Chef, ReactJS, Kubernetes
+\item Proficient: Java, JavaScript, Python, Git, REST, Node, SQL, Django
+\item Comfortable: C/C++, Lua, LaTeX, C\#, Ansible, MongoDB, Agile, Docker
+\item Familiar: Rust, Go, AngularJS, Chef, ReactJS, Kubernetes, Redis
 \end{itemize}
 \smallskip
 {\huge \textbf{Experience:}}
 \hrulefill
 \begin{description}
 
+\item[Software Engineer - Shipwell, Inc.]
+\hfill 07/2021 - 07/2022
+\begin{itemize}
+\item Took ownership of the redesign and expansion of the product's flagship feature
+\item Worked closely with customers and customer relations to solve problems they were having with the software
+\item Scoped, planned, broke down, and presented technical specifications of the redesign
+\item Helped to debug issues across the stack, including in Django, Redis, and Docker
+\end{itemize}
+
 \item[Software Developer - Ping Identity Corp.]
-\hfill 07/2018 - present
+\hfill 07/2018 - 06/2021
 \begin{itemize}
 \item Rapidly turned near-abandonware product into profitable venture by aiding in design and delivery of new requirements
 \item Greatly expanded product stability through development of large numbers of unit tests and close collaboration with QA

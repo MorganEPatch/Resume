@@ -1,0 +1,3 @@
+\newcommand\Address{1234 Main St, City, ST 12345}
+\newcommand\Email{user@example.com}
+\newcommand\Phone{(555)-555-5555}
